@@ -5,7 +5,100 @@
    
     tools:context="com.formation.etudiant.Ajouter" >
 
-  
+  <RelativeLayout 
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:background="@color/blanc"
+      >
+      <!-- nom -->
+      <TextView 
+          android:id="@+id/t1"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:text="Nom"
+          
+          android:textSize="20sp"
+          android:textColor="@color/blanc"
+          android:background="@color/gris_fonce"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_alignParentTop="true"
+          />
+      <EditText android:id="@+id/txt_name"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:textColor="@color/noir"
+          android:layout_below="@id/t1"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+
+       <!-- prenom -->   
+          <TextView 
+          android:id="@+id/t2"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_below="@id/txt_name"
+          android:text="Prenom"
+          android:textSize="20sp"
+          android:textColor="@color/blanc"
+          android:background="@color/gris_fonce"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          
+          />
+      <EditText android:id="@+id/txt_lastname"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:textColor="@color/noir"
+          android:layout_below="@id/t2"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+      <!-- TELEPHONE -->
+             <TextView 
+          android:id="@+id/t3"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_below="@id/txt_lastname"
+          android:text="Tel"
+          android:textSize="20sp"
+          android:textColor="@color/blanc"
+          android:background="@color/gris_fonce"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          
+          />
+      <EditText android:id="@+id/txt_tel"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:textColor="@color/noir"
+          android:layout_below="@id/t3"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+      <!-- E-mail -->
+             <TextView 
+          android:id="@+id/t4"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_below="@id/txt_tel"
+          android:text="Prenom"
+          android:textSize="20sp"
+          android:textColor="@color/blanc"
+          android:background="@color/gris_fonce"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          
+          />
+      <EditText android:id="@+id/txt_mail"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:textColor="@color/noir"
+          android:layout_below="@id/t4"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"/>
+      
+  </RelativeLayout>
   
       <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -26,6 +119,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:background="@drawable/dashboard" />
+        
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,32 +139,48 @@
       android:layout_alignParentBottom="true"
       android:background="@color/orange" >
 
-      <ImageButton
+      <!-- <ImageButton
           android:id="@+id/imageButton1"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentLeft="true"
           android:layout_centerHorizontal="true"
           android:layout_marginLeft="30sp"
-          android:background="@drawable/x_mark" />
+          android:background="@drawable/x_mark" /> -->
 
-      <ImageButton
+   <!--    <ImageButton
           android:id="@+id/imageButton2"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentRight="true"
           android:layout_centerHorizontal="true"
           android:layout_marginRight="30sp"
-          android:background="@drawable/send" />
-
-      <TextView
+          android:background="@drawable/send" /> -->
+           <Button
+          android:id="@+id/btn_send"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="30dp"
           android:layout_centerVertical="true"
-          android:layout_toLeftOf="@+id/imageButton2"
+         
+          android:drawableLeft="@drawable/send"
+          android:text="Envoyer"
+          android:textColor="@color/blanc"
+          android:background="@color/orange" />
+
+      <Button
+          android:id="@+id/btn_x"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="30dp"
+          android:drawableLeft="@drawable/x_mark"
           android:text="Annuler"
           android:textColor="@color/blanc"
-          android:textSize="25dp" />
+          android:background="@color/orange" />
+
   </RelativeLayout>
 
 </RelativeLayout>

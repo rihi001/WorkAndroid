@@ -26,6 +26,10 @@
             android:name=".Ajouter"
             android:label="@string/title_activity_ajouter" >
         </activity>
+        <activity
+            android:name=".Modifier"
+            android:label="@string/title_activity_modifier" >
+        </activity>
     </application>
 
 </manifest>
