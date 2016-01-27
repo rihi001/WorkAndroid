@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.Window;
 
 public class Ajouter extends Activity {
-//c'est test mais bref ok i will 
+//c'est test mais bref ok i will done
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
