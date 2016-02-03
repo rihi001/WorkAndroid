@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.Window;
 
 public class Ajouter extends Activity {
-//c'est test mais bref ok i will done
+//c'est test mais bref ok i will done rihi
 	//simo makhlouki
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
